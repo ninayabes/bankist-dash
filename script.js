@@ -1,7 +1,7 @@
 'use strict';
 
 const account1 = {
-  owner: 'Jonas Schmedtmann',
+  owner: 'John Smith',
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
   interestRate: 1.2, // %
   pin: 1111,
@@ -16,8 +16,8 @@ const account1 = {
     '2020-07-28T23:36:17.929Z',
     '2020-08-01T10:51:36.790Z',
   ],
-  currency: 'EUR',
-  locale: 'pt-PT', // de-DE
+  currency: 'USD',
+  locale: 'en-US',
 };
 
 const account2 = {
@@ -36,8 +36,8 @@ const account2 = {
     '2020-06-25T18:49:59.371Z',
     '2020-07-26T12:01:20.894Z',
   ],
-  currency: 'USD',
-  locale: 'en-US',
+  currency: 'EUR',
+  locale: 'pt-PT', // de-DE
 };
 
 const accounts = [account1, account2];
@@ -205,7 +205,7 @@ btnLogin.addEventListener('click', function (e) {
     // Display UI and message
     labelWelcome.textContent = `Welcome back, ${
       currentAccount.owner.split(' ')[0]
-    }`;
+    }!`;
     containerApp.style.opacity = 100;
 
     const now = new Date();

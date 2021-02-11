@@ -1,6 +1,6 @@
 # bankist-dash
 
-## [See it live!](https://bankist-dash-js.netlify.app/)
+https://bankist-dash-js.netlify.app/
 
 
 
